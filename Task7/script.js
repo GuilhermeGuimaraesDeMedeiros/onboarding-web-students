@@ -1,4 +1,5 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+document.addEventListener("DOMContentLoaded", () => {
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict'
 
@@ -18,3 +19,27 @@
       }, false)
     })
 })()
+
+
+  const fillFormBtn = document.getElementById("fillFormBtn")
+
+  fillFormBtn.addEventListener('click', () => {
+    fetch("https://randomuser.me/api/")
+    .then(response => response.json())
+    .then(data => {
+      const user = data.results[0]
+      document.getElementById("firstName").value = user.name.first
+      document.getElementById("lastName").value = user.name.last
+      document.getElementById("email").value = user.email
+      document.getElementById("contact").value = user.phone
+    })
+    .catch(error => console.error("Erro ao buscar dados do usuário", error))
+  })
+
+  
+})
+
+
+
+
+

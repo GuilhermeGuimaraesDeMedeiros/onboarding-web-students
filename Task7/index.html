@@ -24,7 +24,8 @@
       <form action="" method="post" class="needs-validation" novalidate>
         <div>
           <label for="firstName" class="form-label">First Name:</label>
-          <input type="text" class="form-control" placeholder="Enter First Name" aria-label="Recipient's First Name" aria-describedby="button-addon2" id="firstName" required>
+          <input type="text" class="form-control" placeholder="Enter First Name" aria-label="Recipient's First Name" id="firstName" required>
+          
           <div class="invalid-feedback">
             Enter your first name.
           </div>
@@ -35,7 +36,7 @@
         
         <div>
           <label for="lastName" class="form-label">Last Name:</label>
-          <input type="text" class="form-control" placeholder="Enter Last Name" aria-label="Recipient's Last Name" aria-describedby="button-addon2" id="lastName" required>
+          <input type="text" class="form-control" placeholder="Enter Last Name" aria-label="Recipient's Last Name" id="lastName" required>
           <div class="invalid-feedback">
             Enter your last name.
           </div>
@@ -46,7 +47,7 @@
         
         <div>
           <label for="email" class="form-label">Email Id:</label>
-          <input type="email" class="form-control" placeholder="Enter Email Id" aria-label="Recipient's Email Id" aria-describedby="button-addon2" id="email" required>
+          <input type="email" class="form-control" placeholder="Enter Email Id" aria-label="Recipient's Email Id" id="email" required>
           <div class="invalid-feedback">
             Enter your e-mail.
           </div>
@@ -58,7 +59,7 @@
             
         <div>
           <label for="contact" class="form-label">Contact Nº:</label>
-          <input type="tel" class="form-control" placeholder="Enter Contact Number" aria-label="Recipient's Contact Number" aria-describedby="button-addon2" id="contact" required>
+          <input type="tel" class="form-control" placeholder="Enter Contact Number" aria-label="Recipient's Contact Number" id="contact" required>
           <div class="invalid-feedback">
             Enter your contact number.
           </div>
@@ -84,9 +85,16 @@
         </div>
       
         <!-- Submit button -->
-        <button  type="submit" class="btn btn-primary  mb-4" id="submitBtn" >Submit</button>
-      
-     
+
+        <div class="d-flex justify-content-center">
+          <button  type="submit" class="btn btn-primary mb-4" id="submitBtn" >Submit</button>
+        </div>
+        
+      <!-- Fill form button -->
+        <div class="d-flex justify-content-center">
+          
+          <button type="button" class="btn btn-secondary mb-4" id="fillFormBtn">Fill with random data</button>
+        </div>
         
       </form>
     </div>
